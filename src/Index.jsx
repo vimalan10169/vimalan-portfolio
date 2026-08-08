@@ -80,7 +80,7 @@ function Index() {
           <h2 className="section-title">About Me</h2>
           <p className="mt-3">
             Computer Science graduate passionate about building responsive web applications and interactive user experiences.
-            Skilled in HTML, CSS, Bootstrap, JavaScript, Python, and Django with hands-on internship experience.
+            Skilled in HTML, CSS, Bootstrap, JavaScript, React.Js, SQL, Python, and Django with hands-on internship experience.
           </p>
         </div>
       </section>
@@ -121,7 +121,7 @@ function Index() {
                 <p className="text-muted">Sep-2025 to Feb-2026</p>
                 <ul>
                   <li>Frontend + Backend integration</li>
-                  <li>Reusable components</li>
+                  <li> React Reusable components</li>
                   <li>Problem-solving skills</li>
                 </ul>
               </div>
@@ -140,7 +140,7 @@ function Index() {
       <div className="col-md-4">
         <div className="card p-3 text-center bg-success text-white">
           <h5>Portfolio Website</h5>
-          <p>Animated personal portfolio</p>
+          <p>Animated React personal portfolio</p>
 
           <a
             href="https://vimalan10169.github.io/vimalan-portfolio/"
@@ -157,7 +157,7 @@ function Index() {
       <div className="col-md-4">
         <div className="card p-3 text-center bg-success text-white">
           <h5>Organic Farming</h5>
-          <p>Responsive organic farming website</p>
+          <p>Responsive organic farming UI</p>
 
           <a
             href="https://vimalan10169.github.io/organic-farming/"
@@ -173,8 +173,8 @@ function Index() {
       {/* Weather App */}
       <div className="col-md-4">
         <div className="card p-3 text-center bg-success text-white">
-          <h5>Weather App</h5>
-          <p>API-based weather application</p>
+          <h5>Parcel Booking App</h5>
+          <p>Real-time UI with modular React components</p>
 
           <a
             href="https://your-weather-app-link.com"
