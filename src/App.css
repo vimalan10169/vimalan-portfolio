@@ -80,18 +80,27 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #0f766e, #4ade80);
+  background: linear-gradient(13deg, #0f766e, #4ade80);
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: float 4s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-animation: float 3s ease-in-out infinite;
 }
 .profile-wrap img {
-  width: 270px;
-  height: 270px;
-  border-radius: 50%;
+  width: 290px;
+  height: 290px;
+  border-radius: 90%;
   object-fit: cover;
   background: #fff;
+  -webkit-border-radius: 90%;
+  -moz-border-radius: 90%;
+  -ms-border-radius: 90%;
+  -o-border-radius: 90%;
 }
 @keyframes float {
   0%, 100% { transform: translateY(0); }
@@ -106,17 +115,18 @@ body {
   font-weight: 600;
   color: #0f766e;
 }
-
 /* CARDS */
 .card {
   border: none;
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,.08);
-  transition: .4s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  margin-bottom: 2px;
 }
+
 .card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0,0,0,.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* BUTTON RIPPLE */

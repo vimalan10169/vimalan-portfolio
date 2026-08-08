@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import img1 from './assets/1704376191890.jpg';
+import resume from "./assets/Front_End_Developer.pdf";
 
 // Import social icons
 import wpIcon from './assets/wp.png';
@@ -59,7 +60,10 @@ function Index() {
                 complemented by back-end proficiency in Python, MySQL, and Django.
               </p>
               <a href="#projects" className="btn btn-success me-2">View Work</a>
-              <a href="mailto:vimalan10169@gmail.com" className="btn btn-outline-success">Hire Me</a>
+              <a href="mailto:vimalan10169@gmail.com" className="btn btn-outline-success me-2">Hire Me</a>
+              <a href={resume} download="Front_End_Developer.pdf" class="btn btn-outline-success me-2">
+    📄Download Resume
+</a>
             </div>
             <div className="col-md-6 d-flex justify-content-center mt-4 mt-md-0 reveal">
               <div className="profile-wrap">
@@ -126,32 +130,66 @@ function Index() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section className="section reveal" id="projects">
-        <div className="container">
-          <h2 className="section-title text-center">Projects</h2>
-          <div className="row mt-4">
-            <div className="col-md-4">
-              <div className="card p-3 text-center bg-success text-white">
-                <h5>Portfolio Website</h5>
-                <p>Animated personal portfolio</p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card p-3 text-center bg-success text-white">
-                <h5>Organic Farming</h5>
-                <p>Frontend dashboard</p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card p-3 text-center bg-success text-white">
-                <h5>Weather App</h5>
-                <p>API-based application</p>
-              </div>
-            </div>
-          </div>
+     <section className="section reveal" id="projects">
+  <div className="container">
+    <h2 className="section-title text-center">Projects</h2>
+
+    <div className="row mt-4 g-4">
+
+      {/* Portfolio */}
+      <div className="col-md-4">
+        <div className="card p-3 text-center bg-success text-white">
+          <h5>Portfolio Website</h5>
+          <p>Animated personal portfolio</p>
+
+          <a
+            href="https://vimalan10169.github.io/vimalan-portfolio/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn "
+          >
+            🌐 Live Demo
+          </a>
         </div>
-      </section>
+      </div>
+
+      {/* Organic Farming */}
+      <div className="col-md-4">
+        <div className="card p-3 text-center bg-success text-white">
+          <h5>Organic Farming</h5>
+          <p>Responsive organic farming website</p>
+
+          <a
+            href="https://vimalan10169.github.io/organic-farming/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn "
+          >
+            🌐 Live Demo
+          </a>
+        </div>
+      </div>
+
+      {/* Weather App */}
+      <div className="col-md-4">
+        <div className="card p-3 text-center bg-success text-white">
+          <h5>Weather App</h5>
+          <p>API-based weather application</p>
+
+          <a
+            href="https://your-weather-app-link.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn "
+          >
+            🌐 Live Demo
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* Contact Section */}
       <section className="contact" id="contact">
@@ -159,7 +197,7 @@ function Index() {
           <h2>Contact Me</h2>
           <p>✉ <a href="mailto:vimalan10169@gmail.com">vimalan10169@gmail.com</a></p>
           <p>📞 +91 97919 80514</p>
-          <p>📍 Ramanathapuram</p>
+          <p>📍 Guindy, Chennai</p>
           <div className="social-icons d-flex justify-content-center gap-3">
             <a href="https://wa.me/919791980514"><img src={wpIcon} alt="WhatsApp" height="30" /></a>
             <a href="https://www.instagram.com/_tnteddy/"><img src={instaIcon} alt="Instagram" height="30" /></a>
