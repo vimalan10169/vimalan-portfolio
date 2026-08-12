@@ -80,7 +80,7 @@ function Index() {
           <h2 className="section-title">About Me</h2>
           <p className="mt-3">
             Computer Science graduate passionate about building responsive web applications and interactive user experiences.
-            Skilled in HTML, CSS, Bootstrap, JavaScript, React.Js, SQL, Python, and Django with hands-on internship experience.
+            Skilled in HTML, CSS, Bootstrap, JavaScript, React.Js, SQL and Python with hands-on internship experience.
           </p>
         </div>
       </section>
