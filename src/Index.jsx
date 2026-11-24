@@ -10,7 +10,7 @@ import githubIcon from './assets/github.png';
 import linkedinIcon from './assets/linkedin.png';
 
 function Index() {
-  // Scroll reveal effect
+  // Scroll reveal effect 
   useEffect(() => {
     const revealElements = document.querySelectorAll(".reveal");
     const handleScroll = () => {
@@ -177,7 +177,7 @@ function Index() {
           <p>Real-time UI with modular React components</p>
 
           <a
-            href="https://your-weather-app-link.com"
+            href="https://vimalan10169.github.io/VH-Parcel-Booking/"
             target="_blank"
             rel="noopener noreferrer"
             className="btn "
@@ -192,21 +192,83 @@ function Index() {
 </section>
 
       {/* Contact Section */}
-      <section className="contact" id="contact">
-        <div className="container text-center">
-          <h2>Contact Me</h2>
-          <p>✉ <a href="mailto:vimalan10169@gmail.com">vimalan10169@gmail.com</a></p>
-          <p>📞 +91 97919 80514</p>
-          <p>📍 Guindy, Chennai</p>
-          <div className="social-icons d-flex justify-content-center gap-3">
-            <a href="https://wa.me/919791980514"><img src={wpIcon} alt="WhatsApp" height="30" /></a>
-            <a href="https://www.instagram.com/_tnteddy/"><img src={instaIcon} alt="Instagram" height="30" /></a>
-            <a href="https://www.facebook.com/share/17imnpk3vk/"><img src={fbIcon} alt="Facebook" height="30" /></a>
-            <a href="https://github.com/vimalan10169"><img src={githubIcon} alt="GitHub" height="30" /></a>
-            <a href="https://www.linkedin.com/in/vimalan-s-66974029a/"><img src={linkedinIcon} alt="LinkedIn" height="30" /></a>
-          </div>
-        </div>
-      </section>
+     {/* Contact Section */}
+<section className="contact-section" id="contact">
+  <div className="contact-container">
+
+    <h2>Contact Me</h2>
+
+    <a href="mailto:vimalan10169@gmail.com" className="contact-email">
+      vimalan10169@gmail.com
+    </a>
+
+    <p className="contact-subtitle">
+      Feel free to contact me with any inquiries or questions!
+    </p>
+
+    <form className="contact-form"
+      onSubmit={(e) => {
+        e.preventDefault();
+        const name = e.target.name.value;
+        const email = e.target.email.value;
+        const message = e.target.message.value;
+
+        window.location.href =
+          `mailto:vimalan10169@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(
+            `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+          )}`;
+      }}
+    >
+
+      <div className="input-row">
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          required
+        />
+      </div>
+
+      <textarea
+        name="message"
+        placeholder="Message"
+        rows="4"
+        required
+      ></textarea>
+
+      <div className="submit-container">
+        <button type="submit">Submit</button>
+      </div>
+
+    </form>
+
+    <div className="contact-social-icons">
+      <a href="https://www.facebook.com/share/17imnpk3vk/">
+        <img src={fbIcon} alt="Facebook" />
+      </a>
+
+      <a href="https://www.instagram.com/_tnteddy/">
+        <img src={instaIcon} alt="Instagram" />
+      </a>
+
+      <a href="https://github.com/vimalan10169">
+        <img src={githubIcon} alt="GitHub" />
+      </a>
+
+      <a href="https://www.linkedin.com/in/vimalan-s-66974029a/">
+        <img src={linkedinIcon} alt="LinkedIn" />
+      </a>
+    </div>
+
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="text-center mt-4">
